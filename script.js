@@ -32,8 +32,6 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
 
       activeCard !== null && React.createElement("div", { className: "popup" }, "You clicked on card ", activeCard + 1)));
-
-
   }}
 
 
@@ -54,8 +52,8 @@ class leftCard extends React.Component {
         src: imagePaths[shape],
         alt: shape,
         onClick: () => onClick(index),
-        width: 600,
-        height: 450
+        width: 440,
+        height: 300
       }
     );
   }
@@ -89,4 +87,4 @@ class rightCard extends React.Component {
   }
 }
 
-ReactDOM.render( /*#__PURE__*/React.createElement(MarqueeComponent, null), document.getElementById('root'));
+ReactDOM.render( React.createElement(MarqueeComponent, null), document.getElementById('root'));
